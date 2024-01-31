@@ -1,0 +1,195 @@
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent */
+}
+
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    transition: background-color 0.3s; /* Smooth transition for the background change */
+}
+
+/* style.css */
+.navbar .nav-link, .navbar .navbar-brand {
+    color: white; 
+}
+
+.navbar .nav-link:hover {
+    color: #8695b0;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.navbar .navbar-toggler {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(103%) contrast(103%);
+}
+
+.landing {
+    background-image: url('assets/tree.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 111.4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -111px;
+    flex-direction: column; 
+    
+}
+
+.centered {
+    margin-bottom: 20px;
+}
+
+.centered h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 0.9em
+}
+
+.centered h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.media {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically, if needed */
+    margin-top: 0px;
+}
+
+.media a {
+    margin: 0 10px;
+    margin-right: 10px; /* Adjust the spacing between icons */
+    color: white; /* Set the color to white */
+    font-size: 40px; /* Adjust the size as needed */
+}
+
+.media a:hover {
+    color: #8695b0; /* Slightly lighter color on hover for better user experience */
+}
+
+#logo {
+    width: 80px; /* Increased width */
+    height: 80px; /* Increased height to maintain aspect ratio */
+    border-radius: 50%; /* Keeps the image circular */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    display: block; /* To prevent default inline image alignment issues */
+}
+
+#biswas {
+    width: 300px; /* Adjust width as needed */
+    height: 400px; /* Adjust height to be greater than the width for an oval shape */
+    border-radius: 50%; /* The first value is for horizontal radius, the second for vertical */
+    margin-bottom: 1rem; /* Space below the image */
+    object-fit: cover; /* This will cover the area with the image without stretching it */
+    display: block; /* To ensure it takes the margins into account */
+    margin-left: auto; /* These two margins will center the image horizontally */
+    margin-right: auto;
+}
+#about {
+    background-color: gray;
+    padding: 50px 0;
+}
+
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 350;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 20px 0;
+    border-radius: 3px;
+}
+
+.skill-bar {
+    height: 8px; /* Adjusted height for skinnier bar */
+    background-color: #8695b0;
+    border-radius: 3px;
+}
+
+.skill-per {
+    height: 8px; /* Adjusted height to match the skill-bar */
+    background: lightblue;
+    border-radius: 3px;
+    position: relative;
+    width: 0;
+}
+
+.skill-per.fill {
+    width: var(--fill-percentage); /* This variable should match the 'per' attribute value in your HTML */
+    animation: fillBars 2s ease-in-out forwards; /* Animation to fill the bars */
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: lightblue;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: lightblue;
+    top: -15px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--fill-percentage);
+    }
+}
+
+footer {
+    background-color: #f8f9fa;
+  }
+  
+  footer p {
+    margin-bottom: 0; /* Remove the margin to align with the vertical center */
+  }
+  
+  footer .navbar-brand img {
+    height: 50px;
+  }
+  
+  footer i {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 767px) {
+    footer .col-md-4 {
+      margin-bottom: 10px;
+    }
+  }
+  
