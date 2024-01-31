@@ -1,16 +1,29 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 70px;
+    scroll-padding-top: 50px;
 }
 .navbar {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     background-color: rgba(0, 0, 0, 0); /* Fully transparent */
 }
 
 .navbar-scrolled {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 1); /* Semi-transparent black background */
     transition: background-color 0.3s; /* Smooth transition for the background change */
 }
+
+/* Adjusting the navbar brand/logo size */
+.navbar-brand img {
+    height: 0px; /* Adjust based on your preference */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Changing the font size of navbar links */
+  .navbar .navbar-nav .nav-link {
+    font-size: 0.9rem; /* Smaller font size */
+  }
 
 /* style.css */
 .navbar .nav-link, .navbar .navbar-brand {
@@ -35,7 +48,7 @@ html {
     background-size: cover;
     background-position: center;
     text-align: center;
-    height: 111.4vh;
+    height: 114.4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,14 +103,14 @@ html {
 
 #biswas {
     width: 300px; /* Adjust width as needed */
-    height: 400px; /* Adjust height to be greater than the width for an oval shape */
-    border-radius: 50%; /* The first value is for horizontal radius, the second for vertical */
-    margin-bottom: 1rem; /* Space below the image */
+    height: 225px; /* Adjust height to be greater than the width for an oval shape */
+    margin-bottom: 0rem; /* Space below the image */
     object-fit: cover; /* This will cover the area with the image without stretching it */
     display: block; /* To ensure it takes the margins into account */
     margin-left: auto; /* These two margins will center the image horizontally */
     margin-right: auto;
 }
+
 #about {
     background-color: white;
     padding: 50px 0;

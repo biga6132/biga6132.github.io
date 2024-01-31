@@ -8,18 +8,37 @@ window.addEventListener('scroll', function() {
   });
 
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   var observer = new IntersectionObserver(function(entries) {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add('fill');
+//       }
+//     });
+//   }, {
+//     threshold: 1.0 // Adjust if needed - 1.0 means 100% of the target must be visible
+//   });
+
+//   // Target elements with the 'skill-per' class
+//   document.querySelectorAll('.skill-per').forEach(skill => {
+//     observer.observe(skill);
+//   });
+// });
+
 document.addEventListener("DOMContentLoaded", function() {
-  var observer = new IntersectionObserver(function(entries) {
+  var observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('fill');
+      } else {
+        entry.target.classList.remove('fill');
+        entry.target.style.width = '0'; // Reset the width when not in view
       }
     });
   }, {
-    threshold: 1.0 // Adjust if needed - 1.0 means 100% of the target must be visible
+    threshold: 0.5 // Adjust this value as needed
   });
 
-  // Target elements with the 'skill-per' class
   document.querySelectorAll('.skill-per').forEach(skill => {
     observer.observe(skill);
   });
