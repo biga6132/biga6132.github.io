@@ -205,4 +205,18 @@ footer {
       margin-bottom: 10px;
     }
   }
-  
+#about_me_summary {
+    font-size: 17px;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+#profile_summary {
+    font-size: 17px;
+    text-align: justify;
+}
+
+#resume_btn {
+    margin-top: 20px;
+    color: gray;
+}
