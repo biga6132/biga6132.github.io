@@ -30,7 +30,7 @@
                         <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#education" class="nav-link">Education</a>
+                        <a href="#experience" class="nav-link">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a href="#projects" class="nav-link">Projects</a>
@@ -135,7 +135,7 @@
         <div class="card">
             <div class="card-body">
                 <span id="education-date" style="float: right;">August 2020 - Current</span>
-                <h3 id="uni-name">University of Colorado Boulder</h3>
+                <h3 id="uni-name"><img src="assets/cu-logo.png" alt="CU Logo" style="width: 50px; vertical-align: middle; margin-right: 10px;">University of Colorado Boulder</h3>
                 <h5 id="degree">Bachelor of Science in Computer Science</h5>
                 <p id="uni-description">
                     Relevant cousework: Computer Systems, Software Development, Algorithms, Design and Analysis of Database, 
@@ -145,9 +145,103 @@
           </div>
     </section>
     
+    <!-- Experience -->
+
+    <section class="p-5" id="experience">
+        <h1 style="text-align: center;">Experience</h1>
+        <hr>
+        <!-- Salesforce Intern -->
+        <div class="card">
+            <div class="card-body">
+            <h3><img src="assets/school-logo.png" alt="School Logo" style="width: 50px; vertical-align: middle; margin-right: 10px;">Salesforce Intern - University of Colorado, Remote</h3>
+            <p class="text-muted">May 2022 – Aug 2023 · 4 mos</p>
+            <ul>
+                <li>Analyzed and updated Salesforce Permission Sets to streamline processes and ensure data security</li>
+                <li>Assigned users to new permission set groups and performed data validation to improve data accuracy</li>
+                <li>Created Salesforce Flows and reports, customized metadata, and utilized the Sandbox for testing purposes</li>
+            </ul>
+            </div> 
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+<section id="projects" class="p-5 bg-light">
+    <div class="container">
+        <h1 class="text-center mb-4">Projects</h1>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Unpluq Extension Card -->
+            <div class="col d-flex align-items-stretch">
+                <div class="card">
+                    <img src="assets/unpluq.jpg" class="card-img-top" alt="Unpluq Logo" style="height: 279.5px; ">
+                    <div class="card-body">
+                        <h5 class="card-title">Unpluq Chrome Extension</h5>
+                        <p class="card-text">Developed a Chrome extension for the startup Unpluq, enabling users to block distracting
+                            websites according to customizable schedules synchronized with their Unpluq account.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.unpluq.com/" target="_blank" class="btn btn-secondary">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Lumi Card -->
+            <div class="col d-flex align-items-stretch">
+                <div class="card">
+                    <img src="assets/snowboard.jpg" class="card-img-top" alt="Skiing">
+                    <div class="card-body">
+                        <h5 class="card-title">LUMI Web Application</h5>
+                        <p class="card-text">Developed a full stack website on a six-member team targeting snowboarders to enhance their
+                            experience.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/CU-CSCI-3308-Fall-2021/Lumi" target="_blank" class="btn btn-secondary">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tv Shows Review Card -->
+            <div class="col d-flex align-items-stretch">
+                <div class="card">
+                    <img src="assets/tv.png" class="card-img-top" alt="Project 3" style="height: 279.5px">
+                    <div class="card-body">
+                        <h5 class="card-title">TV Show Reviews Website</h5>
+                        <p class="card-text">Developed a full-stack web application dedicated to TV show reviews, utilizing HTML/CSS and JavaScript to 
+                            create a dynamic and visually engaging front-end.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/biga6132/Tv_ReviewsWebsite" target="_blank" class="btn btn-secondary">See More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Contact Me -->
-
+    <section id="contact" class="p-5">
+        <h1 style="text-align: center;">Contact Me?</h1>
+        <hr>
+        <form action="path/to/form-submission-handler" method="POST">
+            <div class="mb-3">
+                <label for="firstName" class="form-label">First Name *</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Last Name *</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
 
 
     <!-- Footer -->
